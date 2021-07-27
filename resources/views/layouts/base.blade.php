@@ -9,9 +9,9 @@
 <body>
     <header>
         <ul>
-            <li>Accueil</li>
-            <li>Lien 1</li>
-            <li>Lien 2</li>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/page1">Lien 1</a></li>
+            <li><a href="/page2">Lien 2</a></li>
         </ul>
     </header>
     <main>
