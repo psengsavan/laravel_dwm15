@@ -1,5 +1,12 @@
 # Laravel
 
+## Récupérer rapidement ce projet
+```bash
+git clone https://github.com/jperaudon/laravel_dwm15.git .
+composer install
+cp .env.example .env
+```
+
 ## Configutation du serveur
 ### Installation des paquets
 ```bash
