@@ -1,5 +1,10 @@
 # Laravel
 
+## Documentation
+Retrouvez de la doc utile sur :
+- le site de [Laravel](https://laravel.com/docs/8.x)
+- le site du [sillo](https://laravel.sillo.org/laravel-8/)
+
 ## Récupérer rapidement ce projet
 ```bash
 git clone https://github.com/jperaudon/laravel_dwm15.git .
@@ -68,6 +73,33 @@ Si besoin, utiliser la commande suivante pour générer une nouvelle clé :
 php artisan key:generate
 ```
 
+### Autoriser l'accès à Mysql depuis un outil tier
+Utiliser le script interne de mysql :
+```bash
+sudo mysql_secure_installation
+```
+Lors de ce script, accepter de paramétrer le composant *VALIDATE PASSWORD* et suivre la procédure.  
+Puis :
+```bash
+sudo mysql
+```
+```mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '00000000';
+FLUSH PRIVILEGES;
+```
+
+Retrouver toutes ces infos [ici](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-fr).
+
 ## Exercices
 ### Exo 1
 Reprendre notre système en intégrant un Controller qui fera la passerelle entre le web.php et les vues.
+
+## Exo 2 : les migrations
+Mettre en place une migration pour créer une table ```books```.
+Cette table comprend :
+- id
+- title (string)
+- author (string)
+- publication_year (int)
+- genre (string)
+- synopsis (string)
