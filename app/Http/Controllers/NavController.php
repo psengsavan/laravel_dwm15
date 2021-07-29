@@ -13,6 +13,7 @@ class NavController extends Controller
 
     public function addBook()
     {
+        
         return view('addBook');
     }
 }

@@ -20,7 +20,7 @@ sudo apt -y install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt install php8.0
-sudo apt install apache2 libapache2-mod-php8.0 mysql-server php8.0-mysql php8.0-mbstring php8.0-dom
+sudo apt install apache2 libapache2-mod-php8.0 mysql-server php8.0-mysql php8.0-mbstring php8.0-dom zip
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
@@ -103,3 +103,15 @@ Cette table comprend :
 - publication_year (int)
 - genre (string)
 - synopsis (string)
+
+## Exo 3 : seeder
+Utliser les seeders pour intégrer 3 livres dans la base de donnée.
+
+## Exo 4 : CRUD - Read
+Nous allons maintenant essayé d'afficher la liste de tous les livres dans une nouvelle vue.
+Ainsi, nous allons devoir créer :
+- 1 Model
+- 1 vue
+- 1 route
+- 1 méthode dans NavController
+- Mettre à jour notre menu de navigation
