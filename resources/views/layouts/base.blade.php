@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/addBook">Ajouter</a>
+                        <a class="nav-link" href="books">Liste</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lien 2</a>
+                        <a class="nav-link" href="/addBook">Ajouter</a>
                     </li>
                 </ul>
             </div>

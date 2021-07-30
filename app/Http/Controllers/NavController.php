@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 
 class NavController extends Controller
@@ -15,5 +16,13 @@ class NavController extends Controller
     {
         
         return view('addBook');
+    }
+
+    public function books()
+    {
+        $books = Book::all();
+        return view('books', ['books' => $books]);
+        // return view('books', compact('books'));
+
     }
 }

@@ -115,3 +115,5 @@ Ainsi, nous allons devoir créer :
 - 1 route
 - 1 méthode dans NavController
 - Mettre à jour notre menu de navigation
+
+## Exo 5 : CRUD - Create
