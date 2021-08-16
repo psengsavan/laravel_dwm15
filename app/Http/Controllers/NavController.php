@@ -12,17 +12,10 @@ class NavController extends Controller
         return view('home');
     }
 
-    public function addBook()
-    {
-        
-        return view('addBook');
-    }
-
     public function books()
     {
         $books = Book::all();
         return view('books', ['books' => $books]);
         // return view('books', compact('books'));
-
     }
 }

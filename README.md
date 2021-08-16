@@ -10,9 +10,14 @@ Retrouvez de la doc utile sur :
 git clone https://github.com/jperaudon/laravel_dwm15.git .
 composer install
 cp .env.example .env
+php artisan migrate --seed
 ```
 
 ## Configutation du serveur
+
+### Box Vagrant à utiliser
+> ubuntu/bionic64
+
 ### Installation des paquets
 ```bash
 sudo apt update
@@ -117,3 +122,12 @@ Ainsi, nous allons devoir créer :
 - Mettre à jour notre menu de navigation
 
 ## Exo 5 : CRUD - Create
+Ainsi, pour accéder à un formulaire, nous allons devoir créer :
+- 1 vue
+- 1 route
+- 1 méthode dans NavController
+- Mettre à jour notre menu de navigation
+
+Enregistrer le nouveau livre :
+- 1 route
+- 1 méthode dans ActionController
