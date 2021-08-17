@@ -131,3 +131,10 @@ Ainsi, pour accéder à un formulaire, nous allons devoir créer :
 Enregistrer le nouveau livre :
 - 1 route
 - 1 méthode dans ActionController
+
+## Exo 6 : CRUD - Delete
+On va maintenant mettre en place la suppression des livres.
+
+## Exo 7 : Détails des livres
+
+## Exo 8 : CRUD - Update

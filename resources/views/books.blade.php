@@ -14,6 +14,7 @@
                 <th>Auteur</th>
                 <th>Genre</th>
                 <th>Date</th>
+                <th>Supp</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                 <td>{{ $book->author }}</td>
                 <td>{{ $book->genre }}</td>
                 <td>{{ $book->publication_year }}</td>
+                <td>X</td>
             </tr>
             @endforeach
         </tbody>

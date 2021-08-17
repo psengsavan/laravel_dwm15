@@ -18,4 +18,8 @@ class NavController extends Controller
         return view('books', ['books' => $books]);
         // return view('books', compact('books'));
     }
+
+    public function addBook() {
+        return view('addBook');
+    }
 }
