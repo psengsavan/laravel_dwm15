@@ -20,7 +20,7 @@
         <tbody>
             @foreach ($books as $book)
             <tr>
-                <td>{{ $book->title }}</td>
+                <td><a href="book/{{ $book->id }}">{{ $book->title }}</a></td>
                 <td>{{ $book->author }}</td>
                 <td>{{ $book->genre }}</td>
                 <td>{{ $book->publication_year }}</td>
@@ -31,7 +31,6 @@
                         <input class="btn btn-danger" type="submit" value="x">
                     </form>
                 </td>
-
             </tr>
             @endforeach
         </tbody>
