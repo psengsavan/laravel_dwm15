@@ -24,7 +24,14 @@
                 <td>{{ $book->author }}</td>
                 <td>{{ $book->genre }}</td>
                 <td>{{ $book->publication_year }}</td>
-                <td>X</td>
+                <td>
+                    <form action="deleteBook" method="POST">
+                        @csrf
+                        <input type="hidden" name="id" value="{{ $book->id }}">
+                        <input class="btn btn-danger" type="submit" value="x">
+                    </form>
+                </td>
+
             </tr>
             @endforeach
         </tbody>

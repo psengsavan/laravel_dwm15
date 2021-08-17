@@ -19,3 +19,4 @@ Route::get('/', [NavController::class, 'home']);
 Route::get('books', [NavController::class, 'books']);
 Route::get('addBook', [NavController::class, 'addBook']);
 Route::post('addBook', [ActionController::class, 'addBook']);
+Route::post('deleteBook', [ActionController::class, 'deleteBook']);

@@ -19,4 +19,10 @@ class ActionController extends Controller
 
         return redirect('books');
     }
+
+    public function deleteBook(Request $request) {
+        $book = Book::find($request->id);
+        $book->delete();
+        return redirect('books');
+    }
 }
