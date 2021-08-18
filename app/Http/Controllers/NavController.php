@@ -22,4 +22,9 @@ class NavController extends Controller
     public function addBook() {
         return view('addBook');
     }
+
+    public function book($id) {
+        $book = Book::findOrFail($id);
+        return view('book', ['book' => $book]);
+    }
 }

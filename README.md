@@ -139,3 +139,4 @@ On va maintenant mettre en place la suppression des livres.
 Lorsque l'on clique sur le titre d'un livre, on est dirigé sur un page avec les informations complètes dudit livre.
 
 ## Exo 8 : CRUD - Update
+Enfin, il faut maintenant pouvoir modifier les livres existants !

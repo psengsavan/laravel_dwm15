@@ -28,3 +28,8 @@ h1 {
     margin-top: 20px;
     color: white;
 }
+
+.flex {
+    display: flex;
+}
+

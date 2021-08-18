@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
 use App\Http\Controllers\ActionController;
+use App\Http\Controllers\BookController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +17,12 @@ use App\Http\Controllers\ActionController;
 |
 */
 
+
+
 Route::get('/', [NavController::class, 'home']);
+
 Route::get('books', [NavController::class, 'books']);
 Route::get('addBook', [NavController::class, 'addBook']);
 Route::post('addBook', [ActionController::class, 'addBook']);
 Route::post('deleteBook', [ActionController::class, 'deleteBook']);
+Route::get('book/{id}', [NavController::class, 'book']);

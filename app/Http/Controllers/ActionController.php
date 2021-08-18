@@ -21,7 +21,7 @@ class ActionController extends Controller
     }
 
     public function deleteBook(Request $request) {
-        $book = Book::find($request->id);
+        $book = Book::findOrFail($request->id);
         $book->delete();
         return redirect('books');
     }
