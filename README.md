@@ -140,3 +140,14 @@ Lorsque l'on clique sur le titre d'un livre, on est dirigé sur un page avec les
 
 ## Exo 8 : CRUD - Update
 Enfin, il faut maintenant pouvoir modifier les livres existants !
+
+## Exo 9 : clé étrangère
+Nous allons maintenant distinguer les livres des auteurs et créer un nouvelle table ```authors```.
+Les auteurs auront :
+- ID
+- Un nom
+
+Pour l'exercice, nous partirons du principe que chaque livre n'est lié qu'à un seul auteur, mais que les auteurs peuvent avoir écris plusieurs livres.
+
+Nous en profiterons aussi pour améliorer le front en ajouter un menu déroulant pour l'intégration de ces derniers.
+Bien entendu, nous ajouterons aussi migration et seeder pour cette nouvelle table.
