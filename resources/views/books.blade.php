@@ -14,6 +14,7 @@
                 <th>Auteur</th>
                 <th>Genre</th>
                 <th>Date</th>
+                <th>MAJ</th>
                 <th>Supp</th>
             </tr>
         </thead>
@@ -24,6 +25,13 @@
                 <td>{{ $book->author }}</td>
                 <td>{{ $book->genre }}</td>
                 <td>{{ $book->publication_year }}</td>
+                <td>
+                    <form action="updateBook" method="POST">
+                        @csrf
+                        <input type="hidden" name="id" value="{{ $book->id }}">
+                        <input class="btn btn-info" type="submit" value="MAJ">
+                    </form>
+                </td>
                 <td>
                     <form action="deleteBook" method="POST">
                         @csrf

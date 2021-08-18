@@ -27,4 +27,9 @@ class NavController extends Controller
         $book = Book::findOrFail($id);
         return view('book', ['book' => $book]);
     }
+
+    public function updateBook(Request $request) {
+        $book = Book::findOrFail($request->id);
+        return view('updateBook', ['book' => $book]);
+    }
 }

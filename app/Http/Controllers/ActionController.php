@@ -14,15 +14,24 @@ class ActionController extends Controller
         $book->synopsis = $request->synopsis;
         $book->publication_year = $request->publication_year;
         $book->genre = $request->genre;
-
         $book->save();
-
         return redirect('books');
     }
 
     public function deleteBook(Request $request) {
         $book = Book::findOrFail($request->id);
         $book->delete();
+        return redirect('books');
+    }
+
+    public function updateBook(Request $request) {
+        $book = Book::findOrFail($request->id);
+        $book->title = $request->title;
+        $book->author = $request->author;
+        $book->synopsis = $request->synopsis;
+        $book->publication_year = $request->publication_year;
+        $book->genre = $request->genre;
+        $book->save();
         return redirect('books');
     }
 }

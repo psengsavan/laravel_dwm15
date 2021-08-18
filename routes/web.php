@@ -26,3 +26,5 @@ Route::get('addBook', [NavController::class, 'addBook']);
 Route::post('addBook', [ActionController::class, 'addBook']);
 Route::post('deleteBook', [ActionController::class, 'deleteBook']);
 Route::get('book/{id}', [NavController::class, 'book']);
+Route::post('updateBook', [NavController::class, 'updateBook']);
+Route::post('updateOneBook', [ActionController::class, 'updateBook']);
