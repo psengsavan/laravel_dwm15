@@ -18,7 +18,6 @@ use App\Http\Controllers\BookController;
 */
 
 
-
 Route::get('/', [NavController::class, 'home']);
 
 Route::get('books', [NavController::class, 'books']);

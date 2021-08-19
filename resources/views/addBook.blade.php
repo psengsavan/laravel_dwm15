@@ -17,7 +17,11 @@
             <div class="form-group row">
                 <label for="author" class="col-sm-4 col-form-label">Auteur</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" name="author" placeholder="Auteur" value="">
+                    <select type="text" class="form-control" name="author_id">
+                        @foreach ($authors as $author)
+                            <option value="{{ $author->id }}">{{ $author->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="form-group row">

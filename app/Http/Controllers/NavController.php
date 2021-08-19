@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Book;
-
+use App\Models\Author;
 
 class NavController extends Controller
 {
@@ -20,7 +20,8 @@ class NavController extends Controller
     }
 
     public function addBook() {
-        return view('addBook');
+        $authors = Author::all()->sortBy('name');
+        return view('addBook', ['authors' => $authors]);
     }
 
     public function book($id) {
@@ -30,6 +31,7 @@ class NavController extends Controller
 
     public function updateBook(Request $request) {
         $book = Book::findOrFail($request->id);
-        return view('updateBook', ['book' => $book]);
+        $authors = Author::all()->sortBy('name');
+        return view('updateBook', ['book' => $book, 'authors' => $authors]);
     }
 }

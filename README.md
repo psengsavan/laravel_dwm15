@@ -151,3 +151,9 @@ Pour l'exercice, nous partirons du principe que chaque livre n'est lié qu'à un
 
 Nous en profiterons aussi pour améliorer le front en ajouter un menu déroulant pour l'intégration de ces derniers.
 Bien entendu, nous ajouterons aussi migration et seeder pour cette nouvelle table.
+
+## Exo 10 : table intermédiaire
+A partir de maintenant, nous allons considérer que les livres peuvent avoir plusieurs ```genres```.
+Nous allons donc transformer ça en relation _many to many_.
+
+Comme précédemment, nous améliorerons le front en ajoutant des checkbox pour les genres.

@@ -10,7 +10,7 @@ class ActionController extends Controller
     public function addBook(Request $request) {
         $book = new Book;
         $book->title = $request->title;
-        $book->author = $request->author;
+        $book->author_id = $request->author_id;
         $book->synopsis = $request->synopsis;
         $book->publication_year = $request->publication_year;
         $book->genre = $request->genre;
@@ -27,7 +27,7 @@ class ActionController extends Controller
     public function updateBook(Request $request) {
         $book = Book::findOrFail($request->id);
         $book->title = $request->title;
-        $book->author = $request->author;
+        $book->author_id = $request->author_id;
         $book->synopsis = $request->synopsis;
         $book->publication_year = $request->publication_year;
         $book->genre = $request->genre;

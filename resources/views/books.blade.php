@@ -22,7 +22,7 @@
             @foreach ($books as $book)
             <tr>
                 <td><a href="book/{{ $book->id }}">{{ $book->title }}</a></td>
-                <td>{{ $book->author }}</td>
+                <td>{{ $book->author->name }}</td>
                 <td>{{ $book->genre }}</td>
                 <td>{{ $book->publication_year }}</td>
                 <td>

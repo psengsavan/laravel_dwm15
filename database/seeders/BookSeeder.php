@@ -18,21 +18,21 @@ class BookSeeder extends Seeder
         DB::table('books')->insert([
             [
                 'title' => 'La huitième couleur',
-                'author' => 'Pratchett',
+                'author_id' => 1,
                 'publication_year' => 2000,
                 'genre' => 'Fantasy burlesque',
                 'synopsis' => "Un terre plate sur le dos de 4 éléphants sur le dos d'une tortue"
             ],
             [
                 'title' => "L'épée de vérité",
-                'author' => 'Terry Goodkind',
+                'author_id' => 2,
                 'publication_year' => 2005,
                 'genre' => 'Fantasy',
                 'synopsis' => "L'histoire d'un forestier avec son épée"
             ],
             [
                 'title' => 'A la croisée des mondes',
-                'author' => 'Pullman',
+                'author_id' => 4,
                 'publication_year' => 1995,
                 'genre' => 'Enfant',
                 'synopsis' => "Les aventures de Lyra et Pan"

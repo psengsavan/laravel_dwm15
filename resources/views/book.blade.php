@@ -10,7 +10,7 @@
             <div class="card-header">{{ $book->title }}</div>
             <div class="card-body text-dark flex">
                 <p>Auteur :</p>
-                <p class="card-text">{{ $book->author }}</p>
+                <p class="card-text">{{ $book->author->name }}</p>
             </div>
             <div class="card-body text-dark flex">
                 <p>Genre :</p>
