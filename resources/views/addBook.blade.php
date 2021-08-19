@@ -19,7 +19,7 @@
                 <div class="col-sm-8">
                     <select type="text" class="form-control" name="author_id">
                         @foreach ($authors as $author)
-                            <option value="{{ $author->id }}">{{ $author->name }}</option>
+                            <option value="{{ $author->id }}">{{ $author->id }}</option>
                         @endforeach
                     </select>
                 </div>

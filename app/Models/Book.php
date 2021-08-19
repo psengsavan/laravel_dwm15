@@ -11,4 +11,14 @@ class Book extends Model
     {
         return $this->belongsTo(Author::class);
     }
+    
+    /**
+    * 
+    * The roles that belong to the user.
+    *
+    */
+    public function genres()
+    {
+        return $this->belongsToMany(Genre::class);
+    }
 }
