@@ -23,7 +23,11 @@
             <tr>
                 <td><a href="book/{{ $book->id }}">{{ $book->title }}</a></td>
                 <td>{{ $book->author->name }}</td>
-                <td>{{ $book->genres }}</td>
+                <td>
+                    @foreach ($book->genres as $genre)
+                        <p>{{ $genre->name }}</p>
+                    @endforeach
+                </td>
                 <td>{{ $book->publication_year }}</td>
                 <td>
                     <form action="updateBook" method="POST">
